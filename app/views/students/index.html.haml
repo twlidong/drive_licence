@@ -1,0 +1,35 @@
+%section.billboard
+  .container
+    .row
+      .col-md-7
+        .intro.animate.fadeIn
+          %h1 Build Your Company.
+          %p.lead We help entrepreneurs turn great ideas into great companies. We're not an agency or an accelerator. We're a partner.
+          %a{:href=>"#"} Learn More
+          %i.icon-caret-right
+%section.what-we-do
+  .container
+    .section-title
+      %span WHAT WE DO
+    .row
+      .col-md-4
+        %h2 We Build
+        %p First and foremost we build things. We put sweat and tears in. We code, we design, we market. We draw interfaces, we fix bugs. We bring raw ideas to life.
+      .col-md-4
+        %h2 We Mentor
+        %p We take equity in our projects, so their success is important to us. We're able to bring decades of startup experience to critical project decisions.
+      .col-md-4
+        %h2 We Connect
+        %p We maintain and share a network of entrepreneurs, marketers, developers, designers, mentors, investors, lawyers and advisors in the startup industry.
+      %a{:href=>"#"}See our process
+      %i.icon-angle-right
+%section.call-to-action
+  .container
+    .row
+      .col-md-6.col1
+        %i.icon-thumbs-up
+        %p Sign up for early access to the companies and products we build.
+      .col-md-6.col2
+        %form#mc-embedded-subscribe-form.form-inline.validate.form-inline{:action => "http://differential.us6.list-manage.com/subscribe/post?u=8af2fc04c48538e13aa17fe44&amp;id=172d9c308e", :height => "280px", :method => "post", :name => "mc-embedded-subscribe-form", :target => "_blank"}
+          %input#mce-EMAIL.form-control{:name => "EMAIL", :placeholder => "Email Address", :type => "email", :value => ""}
+          %button#mc-embedded-subscribe.bttn.bttnBlue.animate.pulse{:name => "subscribe", :type => "submit"} Go

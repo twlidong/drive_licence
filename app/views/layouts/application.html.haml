@@ -1,0 +1,86 @@
+%html
+  %head
+    = stylesheet_link_tag "application", media: "all",
+                            "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+    %meta{:charset => "UTF-8"}
+  %body
+    %header
+      .navbar.navbar-inverse.navbar-fixed-top
+        .container
+          %a.navbar-brand{:href => "/"}
+            Differential
+          %ul.nav.navbar-nav.pull-right.visible-lg
+            %li
+              %a{:href => "#"} About
+            %li
+              %a{:href => "#"} Companies
+            %li
+              %a{:href => "#"} Team
+            %li
+              %a{:href => "#"} Blog
+            %li
+              %a{:href => "#"} Jobs
+            %li
+              %a{:href => "#"} Contact
+          %a.mobile-menu-trigger.pull-right.hidden-lg{:href => "#mobileNav"}
+            %i.icon-reorder
+          #mobile-menu{:style => "display: none;"}
+            %ul
+              %li
+                %a{:href => "#"} About
+              %li
+                %a{:href => "#"} Companies
+              %li
+                %a{:href => "#"} Team
+              %li
+                %a{:href => "#"} Blog
+              %li
+                %a{:href => "#"} Jobs
+              %li
+                %a{:href => "#"} Contact
+    .section
+      = yield
+    %footer>
+      .footer-top
+        .footer-inner
+        .footer-content
+          .container
+            .row
+              .col-md-6.map
+                %h3 We work at Cintrifuse.
+                #location-map
+              .col-md-3.more-menu
+                %h3
+                  See More
+                %ul
+                  %li
+                    %a{:href=>"http://github.differential.io"} Open Source
+                  %li
+                    %a{:href=>"#"} Open Source
+              .col-md-3.contact-info
+                %h2{:itemprop=>"name"} Differential
+                %p
+                  %span{:itemprop=>"streetAddress"}299 E. Sixth Street
+                  %span{:itemprop=>"addressLocality"}Cincinnati
+                  %span{:itemprop=>"addressLocality"}Cincinnati
+                %ul.social
+                  %li
+                    %a{:href=>"http://twitter.com/bedifferential", :target=>"_blank"}
+                      %i.icon-twitter
+                  %li
+                    %a{:href=>"http://twitter.com/bedifferential", :target=>"_blank"}
+                      %i.icon-twitter
+                  %li
+                    %a{:href=>"http://twitter.com/bedifferential", :target=>"_blank"}
+                      %i.icon-twitter
+      .footer-bottom
+        .container
+          .copyright
+            Copyright © 2013&nbsp;Differential
+          %ul.footer-nav
+            %li
+              %a{:href=>"/"} Home
+            %li
+              %a{:href=>"/"} Contact
